@@ -3,7 +3,6 @@ package com.codecool.farm;
 import com.codecool.farm.animal.Animal;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 class Farm {
@@ -29,11 +28,11 @@ class Farm {
     }
 
     public List<String> getStatus() {
-        List<String> animalStausList = new ArrayList<>();
+        List<String> animalStatusList = new ArrayList<>();
         for (Animal animal : animals) {
-            animalStausList.add("There is a " + animal.getSize() + " sized " + animal.getClass().getSimpleName().toLowerCase() + " in the farm.");
+            animalStatusList.add("There is a " + animal.getSize() + " sized " + animal.getClass().getSimpleName().toLowerCase() + " in the farm.");
         }
-        return animalStausList;
+        return animalStatusList;
     }
 
     public List<Animal> getAnimals() {
